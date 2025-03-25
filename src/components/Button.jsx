@@ -3,12 +3,12 @@ const Button = ({ text, destination }) => {
     <a
       target="_blank"
       rel="noopener noreferrer"
-      class="relative inline-flex items-center justify-center whitespace-nowrap px-6 lg:px-8 py-3 duration-300 overflow-hidden font-medium text-white rounded shadow-xl hover:shadow-black/20 transition-all group bg-black"
+      className="relative inline-flex items-center justify-center whitespace-nowrap px-6 lg:px-8 py-3 duration-300 overflow-hidden font-medium text-white rounded shadow-xl hover:shadow-black/20 transition-all group bg-black"
       href={destination}
     >
-      <span class="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-primary via-primary to-cyan-400 group-hover:opacity-100"></span>
-      <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
-      <span class="relative">{text}</span>
+      <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-primary via-primary to-cyan-400 group-hover:opacity-100"></span>
+      <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+      <span className="relative">{text}</span>
     </a>
   );
 };
