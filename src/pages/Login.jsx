@@ -1,8 +1,24 @@
+import { useContext } from "react";
 import Button from "../components/Button";
 import LoginImage from "/login.jpg";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
-        
+  const { user, setUser, loading, setLoading, signInWithGoogle } =
+    useContext(AuthContext);
+
+  const handleGoogleSignIn = async () => {
+    try {
+      const data = await signInWithGoogle();
+      console.log(
+        data?.user?.displayName,
+        data?.user?.email,
+        data?.user?.photoURL
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <section className="bg-white">
@@ -230,7 +246,10 @@ const Login = () => {
               </div>
             </form>
 
-            <div className="mt-3 space-y-3 *:w-full">
+            <div
+              className="mt-3 space-y-3 *:w-full cursor-pointer"
+              onClick={handleGoogleSignIn}
+            >
               <Button text={"Sign up with Google"} />
             </div>
 
