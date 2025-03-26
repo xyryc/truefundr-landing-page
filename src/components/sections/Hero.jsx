@@ -4,11 +4,11 @@ import Button from "../Button";
 
 const Hero = () => {
   const { ref: leftRef, inView: leftInView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.2,
   });
   const { ref: rightRef, inView: rightInView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.2,
   });
 

@@ -3,11 +3,6 @@ import Button from "../Button";
 import { motion, useAnimation } from "motion/react";
 import { useInView } from "react-intersection-observer";
 
-const logoVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
 const Pricing = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
@@ -20,6 +15,11 @@ const Pricing = () => {
     }
   }, [controls, inView]);
 
+  const variant = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
     <section className="py-10 bg-[#020617] sm:py-16 lg:py-24" ref={ref}>
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -27,7 +27,7 @@ const Pricing = () => {
           className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10"
           initial="hidden"
           animate={controls}
-          variants={logoVariants}
+          variants={variant}
         >
           <div className="flex flex-col justify-between lg:py-5">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl">
@@ -108,10 +108,10 @@ const Pricing = () => {
           <div>
             <div className="overflow-hidden bg-white rounded-md">
               <div className="p-10">
-                <h3 className="text-xs font-semibold tracking-widest text-purple-600 uppercase">
+                <h3 className="text-xs font-semibold tracking-widest  uppercase">
                   Personal Loan Package
                 </h3>
-                <p className="mt-4 text-6xl font-bold text-black">$79</p>
+                <p className="mt-4 text-6xl font-bold text-blue-600">$79</p>
 
                 <ul className="flex flex-col mt-8 space-y-4">
                   <li className="inline-flex items-center space-x-2">
