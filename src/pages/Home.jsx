@@ -1,7 +1,13 @@
+import Hero from "../components/sections/Hero";
+import LogoCloud from "../components/sections/LogoCloud";
+
 const Home = () => {
-  return <div>
-    home
-  </div>;
+  return (
+    <>
+      <Hero />
+      <LogoCloud />
+    </>
+  );
 };
 
 export default Home;

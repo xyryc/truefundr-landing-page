@@ -8,3 +8,32 @@ html {
 .font-rubik {
   font-family: "Rubik", sans-serif;
 }
+
+
+.text-container {
+  overflow: hidden;
+  width: fit-content;
+  border-right: 2px solid #1F2937;
+  white-space: nowrap;
+  animation: typing 3s steps(30) forwards, blink 0.8s infinite;
+}
+
+.text {
+  font-size: 24px;
+  color: #1F2937;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

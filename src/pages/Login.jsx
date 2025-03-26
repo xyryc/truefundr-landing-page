@@ -36,7 +36,7 @@ const Login = () => {
           <div className="relative">
             <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
               <h3 className="text-4xl font-bold text-white">
-                Join 5k+ customers
+                Join 10k+ customers
                 <br className="hidden xl:block" />
                 &
                 <br className="hidden xl:block" />
@@ -44,7 +44,7 @@ const Login = () => {
               </h3>
               <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-[#2C5ADB] rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const Login = () => {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-[#2C5ADB] rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const Login = () => {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-[#2C5ADB] rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const Login = () => {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-[#2C5ADB] rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +258,7 @@ const Login = () => {
               <a
                 href="#"
                 title=""
-                className="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
+                className="text-[#2C5ADB] transition-all duration-200 hover:underline"
               >
                 Privacy Policy
               </a>{" "}
@@ -266,7 +266,7 @@ const Login = () => {
               <a
                 href="#"
                 title=""
-                className="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
+                className="text-[#2C5ADB] transition-all duration-200 hover:underline"
               >
                 Terms of Service
               </a>
