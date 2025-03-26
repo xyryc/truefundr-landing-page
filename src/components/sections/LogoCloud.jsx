@@ -46,8 +46,9 @@ const LogoCloud = () => {
               <br />
             </h2>
             <p className="mt-6 text-base text-[#1F2937]">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              We provide personalized loan solutions tailored to your needs.
+              With years of experience and thousands of successful loans, we
+              help you achieve your financial goals with ease and trust.
             </p>
           </motion.div>
 
